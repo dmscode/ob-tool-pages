@@ -79,7 +79,11 @@ onMounted(() => {
     <el-col :xs="24" :sm="18" :md="12" :lg="8" :xl="6">
       <h1>Share Card</h1>
       <el-collapse-transition>
-        <div v-show="mode==='Editing'">
+        <el-form
+          ref="form"
+          label-width="auto"
+          label-position="left"
+          v-show="mode==='Editing'">
           <el-form-item>
             <el-input
               id="source"
@@ -114,7 +118,7 @@ onMounted(() => {
               @click="generateImage"
               icon="Printer">Generate Image</el-button>
           </el-form-item>
-        </div>
+        </el-form>
       </el-collapse-transition>
       <div v-show="mode==='Preview'">
         <el-button
