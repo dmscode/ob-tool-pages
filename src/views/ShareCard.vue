@@ -62,6 +62,7 @@ const generateImage = async()=>{
     canvas_area.value!.innerHTML = ''
     canvas_area.value!.appendChild(canvas)
     copyImage(canvas)
+    canvas_area.value!.innerHTML = `<img src="${canvas.toDataURL()}" style="width: 100%">`
     mode.value = 'ShowImage'
   });
   return
