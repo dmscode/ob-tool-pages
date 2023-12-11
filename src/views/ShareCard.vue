@@ -169,7 +169,7 @@ onMounted(() => {
   background-color: rgba(255, 255, 255, 1);
   padding: 2rem 2rem;
   backdrop-filter: blur(32px);
-  font-size: inherit;
+  font-size: 18px;
 }
 #preview > .card > .horizontalLine {
   background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
@@ -189,7 +189,7 @@ onMounted(() => {
   font-weight: bold;
 }
 #preview > .card > .cardInfo > .info > .desc {
-  font-size: .8em;
+  font-size: 16px;
   opacity: .8;
   padding: .5rem 0;
 }
