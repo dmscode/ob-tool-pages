@@ -1,0 +1,53 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --gray-dark : #282c34;
+  --red       : #e06c75;
+  --green     : #98c379;
+  --yellow    : #e5c07b;
+  --blue-light: #61afef;
+  --purple    : #c678dd;
+  --blue      : #56b6c2;
+  --gray-light: #dcdfe4;
+
+  --border-radius: 6px;
+  --font-size: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray-dark : #5a6374;
+    --red       : #e06c75;
+    --green     : #98c379;
+    --yellow    : #e5c07b;
+    --blue-light: #61afef;
+    --purple    : #c678dd;
+    --blue      : #56b6c2;
+    --gray-light: #dcdfe4;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html,
+body {
+  font-size: var(--font-size);
+}
+body {
+  min-height: 100vh;
+  color: var(--gray-dark);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.8;
+  font-family: "Fira Code", "霞鹜新晰黑", "Sarasa Mono SC", monospace;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
