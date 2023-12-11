@@ -2,12 +2,12 @@
 import "../assets/github-markdown-light.css";
 import { nextTick, ref, onMounted } from 'vue';
 import { ElMessage } from 'element-plus'
+import 'element-plus/es/components/message/style/css'
 import { marked } from 'marked';
 import { computed } from '@vue/reactivity';
 import html2canvas from 'html2canvas';
 
 const props = defineProps(["title", "desc", "content", "copy"])
-console.log(props)
 /** @type {ref<string>} 输入的原始内容 */
 const source = ref(props.content || '');
 const cardConfig = ref({
