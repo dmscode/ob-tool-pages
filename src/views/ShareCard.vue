@@ -120,27 +120,28 @@ onMounted(() => {
           </el-form-item>
         </el-form>
       </el-collapse-transition>
-      <div v-show="mode==='Preview'">
+      <el-form-item v-show="mode!=='Editing'">
         <el-button
             type="success"
             size="large"
             style="width: 100%"
             @click="()=>mode='Editing'"
             icon="Edit">Back to Edit</el-button>
-        <div id="preview"
-          ref="preview"
-          :style="previewStyle" >
-          <div class="card">
-            <div class="content markdown-body" v-html="previewCode"></div>
-            <div class="horizontalLine"></div>
-            <div class="cardInfo">
-              <div class="info">
-                <div class="title">{{cardConfig.title}}</div>
-                <div class="desc">{{cardConfig.desc}}</div>
-              </div>
-              <div class="logo">
-                <img src="@/assets/obsidian-icon.svg" alt="Logo">
-              </div>
+      </el-form-item>
+      <div id="preview"
+        ref="preview"
+        :style="previewStyle"
+        v-show="mode==='Preview'" >
+        <div class="card">
+          <div class="content markdown-body" v-html="previewCode"></div>
+          <div class="horizontalLine"></div>
+          <div class="cardInfo">
+            <div class="info">
+              <div class="title">{{cardConfig.title}}</div>
+              <div class="desc">{{cardConfig.desc}}</div>
+            </div>
+            <div class="logo">
+              <img src="@/assets/obsidian-icon.svg" alt="Logo">
             </div>
           </div>
         </div>

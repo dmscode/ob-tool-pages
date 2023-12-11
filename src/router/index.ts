@@ -17,7 +17,6 @@ const router = createRouter({
         Object.keys(route.query).forEach(key => {
           querys[key] = decodeURIComponent(decodeURIComponent( route.query[key] as string ))
         })
-        console.log(querys)
         return querys
       },
       // route level code-splitting
