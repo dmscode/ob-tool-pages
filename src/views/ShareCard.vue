@@ -185,6 +185,7 @@ onMounted(() => {
   font-size: 1em;
   line-height: 1.2;
   flex-grow: 1;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 #preview > .card > .cardInfo > .info > .title {
   font-weight: bold;
