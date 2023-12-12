@@ -15,7 +15,7 @@ const router = createRouter({
       props: route => {
         const querys:{[index:string]:any} = {}
         Object.keys(route.query).forEach(key => {
-          querys[key] = decodeURIComponent(decodeURIComponent( route.query[key] as string ))
+          querys[key] = decodeURIComponent( route.query[key] as string )
         })
         return querys
       },
