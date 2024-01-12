@@ -174,6 +174,7 @@ onMounted(() => {
 }
 #preview > .card > .content pre > code {
   text-wrap: wrap;
+  word-wrap: break-word;
 }
 #preview > .card > .horizontalLine {
   background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
