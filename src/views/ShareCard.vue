@@ -155,7 +155,7 @@ onMounted(() => {
   </el-row>
 </template>
 
-<style scoped>
+<style>
 #preview {
   width: 480px;
   margin: 1rem auto;
