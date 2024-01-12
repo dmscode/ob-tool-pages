@@ -172,6 +172,9 @@ onMounted(() => {
   backdrop-filter: blur(32px);
   font-size: 18px;
 }
+#preview > .card > .content pre > code {
+  text-wrap: wrap;
+}
 #preview > .card > .horizontalLine {
   background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
   height: .4rem;
